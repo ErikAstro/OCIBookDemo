@@ -1,0 +1,9 @@
+---
+- name: Get server time info
+  hosts: all
+
+  tasks:
+
+  - name: Get time Info
+    debug:
+     var: ansible_date_time
